@@ -5,11 +5,11 @@ from matplotlib.lines import Line2D
 import numpy as np
 import pandas as pd
 
-name = 'act4'
+name = 'example4'
 
 # Load the YOLO model
-model = YOLO('cbest.pt')
-video_path = f"{name}.mp4"
+model = YOLO('model.pt')
+video_path = f"./video/{name}.mp4"
 cap = cv2.VideoCapture(video_path)
 
 # Lists to store coordinates and bounding box sizes
